@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>盒子模型</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .box{
+        
+        background: olive;
+        border: 10px #777777 solid;
+        width: 500px;
+        height: 200px;
+
+        /* padding全写 */
+        padding: 20px;
+        /* 后面写的内容会覆盖前面的内容 */
+
+        /*padding单写 */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        /* padding简写  上 右 下 左*/
+        padding: 10px 20px 10px 20px;
+       /* padding简写 */
+        padding: 10px 20px;
+
+        /* margin全写*/
+        margin:20px;
+
+        /* margin单写 margin-top和margin-bottom取最大值 */
+        margin-top: 100px;
+        margin-bottom: 80px;
+        margin-left: 50px;
+        margin-right: 50px;
+
+       /* margin简写  上 右 下 左*/
+        margin: 10px 20px 10px 20px;
+       /* margin简写 */
+        margin: 10px 20px;
+
+        /* 将padding和border都算入宽高中 */
+        box-sizing: border-box;
+    }
+    /* body{
+        margin: 0;
+    } */
+  
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>box one</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Repudiandae tempora at aut eaque sint reiciendis perspiciatis eum blanditiis, culpa officia.</p>
+    </div>
+    <div class="box">
+        <h3>box two</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Repudiandae tempora at aut eaque sint reiciendis perspiciatis eum blanditiis, culpa officia.</p>
+    </div>
+</body>
+</html>

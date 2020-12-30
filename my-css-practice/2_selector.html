@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>css选择器</title>
+    <style>
+        /* .代表的是class类选择器 */
+        .primary-heading{
+            color:blue;
+        }
+
+        /* #代表的是id的类选择器 */
+        #welcome{
+            background-color: #f4f4f4;
+        }
+        #about{
+            color:white;
+        }
+
+        /* 多选择器 */
+        #welcome,#about,h2,p{
+            border:1px solid #ccc;
+            padding:10px;
+            margin-bottom: 5px;
+        }
+
+        /* 嵌套选择器  welcome子集下的p标签*/
+        #welcome p{
+            font-size:20px;
+        }
+       
+
+        /* 标签选择器 */
+        body{
+            background-color: #333333;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="welcome">
+    <h2 class="primary-heading"> 标题1</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam praesentium nesciunt suscipit provident quibusdam quae modi quas minus consequuntur nemo.
+    </p>
+    </div>
+
+    <div id="about">
+    <h2>标题2</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Magnam praesentium nesciunt suscipit provident quibusdam quae modi quas minus consequuntur nemo.
+    </p>
+    </div>
+</body>
+</html>
