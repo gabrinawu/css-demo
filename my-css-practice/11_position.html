@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>定位</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+        .box{
+            width:100px;
+            height: 100px;
+        }
+
+    /* 相对定位 */
+        #box-1{
+            position: relative;
+            top:50px;
+            left:50px;
+            background: brown;
+            /* z-index的数值越大，它的图层越上浮表面 */
+            z-index: 1;
+        }
+
+
+/* 绝对定位:父级设置相对定位, 然后相对该父级的容器进行绝对定位 */
+        .container{
+            position: relative;
+            width:500px;
+            height:500px;
+            background: #333333;
+            z-index: 2;
+        }
+        #box-2{
+            position: absolute;
+            top:100px;
+            left:100px;
+            background:yellowgreen;
+        }
+        #box-3{
+            position:absolute;
+            bottom: 100px;
+            right:100px;
+            background:darksalmon;
+        }
+
+
+
+        #box-4{
+            /* 固定定位 */      
+            background:cyan;
+            position: fixed;
+           
+        }
+        #box-5{
+            background:darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <!-- #box-1.box -->
+    <div id="box-1" class="box"></div>
+<div class="container">
+    <div id="box-2" class="box"></div>
+    <div id="box-3" class="box"></div>
+</div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+</body>
+</html>

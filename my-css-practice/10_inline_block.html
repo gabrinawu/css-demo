@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>行 块 内联块</title>
+    <style>
+        li{
+            display:inline;
+        }
+        li a{
+            padding:20px;
+        }
+        img{
+            /* 使行标签在行内居中的方法 */
+            display:block;
+            margin: auto;
+        }
+        .box{
+            width:32.8%;
+            display: inline-block;
+            background: turquoise;
+            padding: 20px;
+            margin-bottom: 15px;
+            /* 宽和高按一个盒子整体算 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于</a></li>
+        <li><a href="#">联系</a></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <img src="./image/leaf.png" alt="">
+    <img src="./image/leaf.png" alt="">
+
+    <div class="box">
+        <h3>Heading 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Harum nihil quibusdam magnam nobis minus nisi autem incidunt veritatis illum consequuntur?</p>
+    </div>
+    <div class="box">
+        <h3>Heading 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Harum nihil quibusdam magnam nobis minus nisi autem incidunt veritatis illum consequuntur?</p>
+    </div>
+    <div class="box">
+        <h3>Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Harum nihil quibusdam magnam nobis minus nisi autem incidunt veritatis illum consequuntur?</p>
+    </div>
+</body>
+</html>
