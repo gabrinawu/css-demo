@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Login</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-family: 'Microsoft YaHei','微软雅黑',STXihei;
+            background:white;
+            color:black;
+            line-height: 1.8em;
+        }
+        a{
+            text-decoration: none;
+        }
+        #container{
+            /* border: black solid 1px; */
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color:white;
+        }
+        .form-wrap{
+            background:white;
+            padding: 30px;  
+        }
+        .form-wrap h1,.form-wrap p{
+            text-align: center;
+        }
+        .form-wrap .form-group{
+            margin-top: 10px;
+        }
+        .form-wrap .form-group label{
+            color: #666666;
+            display: block;
+        }
+        .form-wrap .form-group input{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: black 2px solid;
+            border-radius: 10px;
+        }
+        .form-wrap button{
+            display:block;
+            width: 50%;
+            /* text-align: center; */
+            padding: 10px;
+            margin: 20px auto;
+            background:white;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .form-wrap button:hover{
+            background: darkgray;
+        }
+        .form-wrap .bottom-text{
+            font-size: 5px;
+            /* margin-top: 20px; */
+        }
+        footer{
+            text-align: center;
+            margin-top: 5px;
+            font-size: 5px;
+        }
+        footer a{
+            color:green;
+        }
+    </style> 
+</head>
+<body>
+    <div id="container">
+        <div class="form-wrap">
+            <h1>注册</h1>
+            <p>加入全球最大留学生生活社区</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">留学学校</label>
+                  
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="sex">留学城市</label>
+                   
+                    <input type="text" name="sex" id="sex">
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+               
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+               
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="password2">确认密码</label>
+                 
+                    <input type="password" name="password2" id="password2">
+                </div>
+                <button type="submit" class="btn">注册</button>
+                <p class="bottom-text">
+                    注册即您已同意<a href="#">本站用户服务协议</a>
+                </p>
+            </form>
+        </div>
+        <footer>
+            <p>已有账户了？<a href="#">点击这里登陆</a></p>
+        </footer>
+    </div>
+</body>
+</html>
