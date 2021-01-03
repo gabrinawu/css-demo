@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>补充</title>
+    <style>
+         /* 选择器优先级:ice原则 i=id c=class e=element */
+        h1{
+            /* display: none; */
+            /* visibility: hidden; 位置还在，但是内容不显示*/
+            color:blue !important;
+            /* important会把优先级提到最高 */
+        }
+        .hello{
+            color: red;
+            margin-top: -30px;
+            margin-left: -30px;
+       
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hello">Hello world</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptates dolorem dolor. 
+        Unde architecto incidunt ipsam laborum at. Fuga numquam consequuntur at aut veritatis. 
+        Quam cum nemo assumenda repellat doloribus.</p>
+</body>
+</html>
