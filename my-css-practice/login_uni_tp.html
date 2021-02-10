@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Login</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Microsoft YaHei", "微软雅黑", STXihei;
+        background: white;
+        color: black;
+        line-height: 1.8em;
+      }
+      a {
+        text-decoration: none;
+      }
+      #container {
+        /* border: black solid 1px; */
+        max-width: 400px;
+        margin: 30px auto;
+        padding: 30px;
+        background-color: white;
+      }
+      .form-wrap {
+        background: white;
+        padding: 30px;
+      }
+      .form-wrap h1,
+      .form-wrap p {
+        text-align: center;
+      }
+      .form-wrap .form-group {
+        margin-top: 10px;
+      }
+      .form-wrap .form-group label {
+        color: #666666;
+        display: block;
+      }
+      .form-wrap .form-group input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: black 2px solid;
+        border-radius: 10px;
+      }
+      .form-wrap button {
+        display: block;
+        width: 50%;
+        /* text-align: center; */
+        padding: 10px;
+        margin: 20px auto;
+        background: white;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .form-wrap button:hover {
+        background: darkgray;
+      }
+      .form-wrap .bottom-text {
+        font-size: 5px;
+        /* margin-top: 20px; */
+      }
+      footer {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 5px;
+      }
+      footer a {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="form-wrap">
+        <h1>login page</h1>
+        <p>se 06 tp uog</p>
+        <form>
+          <div class="form-group">
+            <label for="name">owner name</label>
+
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="sex">repository name</label>
+
+            <input type="text" name="sex" id="sex" />
+          </div>
+          <div class="form-group">
+            <label for="password">password</label>
+
+            <input type="password" name="password" id="password" />
+          </div>
+          <button type="submit" class="btn">login</button>
+          <p class="bottom-text">
+            login means you agree to the<a href="#"
+              >user service contract of this site</a
+            >
+          </p>
+        </form>
+      </div>
+      <footer>
+        <p><a href="#"></a></p>
+      </footer>
+    </div>
+  </body>
+</html>
